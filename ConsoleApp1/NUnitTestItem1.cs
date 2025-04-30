@@ -78,7 +78,7 @@ public class NUnitTestItem1
     }
 
     [Test]
-    public void Evaluate_ExpressionWithMultipleOperators()
+    public void ExpressionWithMultipleOperators()
     {
         string expression = "1 + 2 * 3 - 4 / 2";
         double result = cl.EvaluateExpression(expression);
@@ -86,7 +86,7 @@ public class NUnitTestItem1
     }
 
     [Test]
-    public void Evaluate_ComplexExpressionWithBrackets()
+    public void ComplexExpressionWithBrackets()
     {
         string expression = "(1 + 2) * (3 - 4)";
         double result = cl.EvaluateExpression(expression);
@@ -94,25 +94,25 @@ public class NUnitTestItem1
     }
 
     [Test]
-    public void Evaluate_SinOfPiOver2()
+    public void SinOfPiOver2()
     {
         Assert.Throws<FormatException>(() => cl.EvaluateExpression("sin(3.14159265359 / 2)"));
     }
 
     [Test]
-    public void Evaluate_CosOfPi()
+    public void CosOfPi()
     {
         Assert.Throws<FormatException>(() => cl.EvaluateExpression("cos(3.14159265359)"));
     }
 
     [Test]
-    public void Evaluate_NestedFunctionCalls()
+    public void NestedFunctionCalls()
     {
         Assert.Throws<FormatException>(() => cl.EvaluateExpression("sin(cos(0))"));
     }
 
     [Test]
-    public void Evaluate_VeryLargeNumbers()
+    public void VeryLargeNumbers()
     {
         string expression = "999999999 + 1";
         double result = cl.EvaluateExpression(expression);
@@ -120,13 +120,13 @@ public class NUnitTestItem1
     }
 
     [Test]
-    public void Evaluate_RoundingInExpression()
+    public void RoundingInExpression()
     {
         Assert.Throws<FormatException>(() => cl.EvaluateExpression("2.4 * 2.5 - 3.6"));
     }
 
     [Test]
-    public void Evaluate_ComplexNestedExpression()
+    public void ComplexNestedExpression()
     {
         string expression = "2 * (3 + 5) - 6 / (2 - 1)";
         double result = cl.EvaluateExpression(expression);
@@ -134,7 +134,7 @@ public class NUnitTestItem1
     }
 
     [Test]
-    public void Evaluate_OperatorsInDifferentOrder()
+    public void OperatorsInDifferentOrder()
     {
         string expression = "6 / 2 * 3 + 4 - 5";
         double result = cl.EvaluateExpression(expression);
@@ -142,14 +142,14 @@ public class NUnitTestItem1
     }
 
     [Test]
-    public void Evaluate_ExpressionWithDecimalNumbers()
+    public void ExpressionWithDecimalNumbers()
     {
         
         Assert.Throws<FormatException>(() => cl.EvaluateExpression("3.5 + 2.2 - 1.5"));
     }
 
     [Test]
-    public void Evaluate_ExpressionWithNegativeNumbers()
+    public void ExpressionWithNegativeNumbers()
     {
         string expression = "-5 + 3";
         double result = cl.EvaluateExpression(expression);
@@ -157,7 +157,7 @@ public class NUnitTestItem1
     }
 
     [Test]
-    public void Evaluate_ExpressionWithParenthesesPrioritizing()
+    public void ExpressionWithParenthesesPrioritizing()
     {
         string expression = "1 + 2 * (3 + 4)";
         double result = cl.EvaluateExpression(expression);
@@ -165,37 +165,56 @@ public class NUnitTestItem1
     }
 
     [Test]
-    public void Evaluate_ExpressionWithInvalidCharacters()
+    public void ExpressionWithInvalidCharacters()
     {
         string expression = "5 + x";
         Assert.Throws<NotSupportedException>(() => cl.EvaluateExpression(expression));
     }
 
     [Test]
-    public void Evaluate_ExpressionWithDecimalFactorial()
+    public void ExpressionWithDecimalFactorial()
     {
         string expression = "4.5!";
         Assert.Throws<FormatException>(() => cl.EvaluateExpression(expression));
     }
 
     [Test]
-    public void Evaluate_ExpressionWithFractionalNumbers()
+    public void ExpressionWithFractionalNumbers()
     {
         string expression = "3.5 + 2.5";
         Assert.Throws<FormatException>(() => cl.EvaluateExpression(expression));
     }
     [Test]
-    public void Evaluate_ExpressionWithNonCorrectFractionalNumberst()
+    public void ExpressionWithNonCorrectFractionalNumberst()
     {
         string expression = "3,5 + 2,5";
         Assert.Throws<NotSupportedException>(() => cl.EvaluateExpression(expression));
     }
 
     [Test]
-    public void Evaluate_ExpressionWithString()
+    public void ExpressionWithString()
     {
         string expression = "DASF";
         Assert.Throws<NotSupportedException>(() => cl.EvaluateExpression(expression));
     }
+
+    [Test]
+    public void ExtraOperator()
+    {
+        Assert.Throws(typeof(InvalidOperationException), () => cl.EvaluateExpression("2++3"));
+    }
+
+    [Test]
+    public void EmptyBrackets()
+    {
+        Assert.Throws(typeof(InvalidOperationException), () => cl.EvaluateExpression("()"));
+    }
+
+    [Test]
+    public void OnlyOperator()
+    {
+        Assert.Throws(typeof(InvalidOperationException), () => cl.EvaluateExpression("+"));
 }
 
+
+    }

@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\blockchain\\Desktop\\ffff\\ConsoleApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6C52682A-1F5C-48DE-A9FF-4A55FF3BBA12}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\blockchain\\desktop\\ffff\\consoleapp1\\consoleapp1\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C52682A-1F5C-48DE-A9FF-4A55FF3BBA12}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6C52682A-1F5C-48DE-A9FF-4A55FF3BBA12}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\blockchain\\desktop\\ffff\\consoleapp1\\consoleapp1\\nunittestitem1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6C52682A-1F5C-48DE-A9FF-4A55FF3BBA12}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\nunittestitem1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C52682A-1F5C-48DE-A9FF-4A55FF3BBA12}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\blockchain\\desktop\\ffff\\consoleapp1\\consoleapp1\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C52682A-1F5C-48DE-A9FF-4A55FF3BBA12}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6C52682A-1F5C-48DE-A9FF-4A55FF3BBA12}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\blockchain\\desktop\\ffff\\consoleapp1\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,26 +34,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\blockchain\\Desktop\\ffff\\ConsoleApp1\\ConsoleApp1\\Class1.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\Class1.cs",
               "ToolTip": "C:\\Users\\blockchain\\Desktop\\ffff\\ConsoleApp1\\ConsoleApp1\\Class1.cs",
               "RelativeToolTip": "ConsoleApp1\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAswL8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-30T06:35:42.548Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "NUnitTestItem1.cs",
               "DocumentMoniker": "C:\\Users\\blockchain\\Desktop\\ffff\\ConsoleApp1\\ConsoleApp1\\NUnitTestItem1.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\NUnitTestItem1.cs",
               "ToolTip": "C:\\Users\\blockchain\\Desktop\\ffff\\ConsoleApp1\\ConsoleApp1\\NUnitTestItem1.cs",
               "RelativeToolTip": "ConsoleApp1\\NUnitTestItem1.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAAAMUAAABWAAAAAAAAAA==",
+              "ViewState": "AgIAALYAAAAAAAAAAAAtwMkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-30T06:34:05.193Z",
               "EditorCaption": ""
@@ -66,7 +66,7 @@
               "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
               "ToolTip": "C:\\Users\\blockchain\\Desktop\\ffff\\ConsoleApp1\\ConsoleApp1\\Program.cs",
               "RelativeToolTip": "ConsoleApp1\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-30T06:29:41.606Z",
               "EditorCaption": ""

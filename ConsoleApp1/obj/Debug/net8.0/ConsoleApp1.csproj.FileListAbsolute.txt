@@ -155,3 +155,4 @@ C:\Users\blockchain\Desktop\ffff\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\refint
 C:\Users\blockchain\Desktop\ffff\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.pdb
 C:\Users\blockchain\Desktop\ffff\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.genruntimeconfig.cache
 C:\Users\blockchain\Desktop\ffff\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ref\ConsoleApp1.dll
+C:\Users\blockchain\Desktop\ffff\ConsoleApp1\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.sourcelink.json
